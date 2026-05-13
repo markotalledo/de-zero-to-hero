@@ -73,56 +73,38 @@
 
 ---
 
-### 2026-05-13 (Día 3 de 365 · Semana 1 · Miércoles) 🟡 en progreso
+### 2026-05-13 (Día 3 + 4 de 365 · Semana 1 · Miércoles) ✅ cerrado
 
-**🎯 Foco del día:** Tooling local + tu primer Terraform Hello World
+> Comprimí Día 3 y Día 4 en uno. Total ~3h hoy.
 
-**🎥 Videos del día (mirar ~30 min):**
-- Primary (15 min): "Install Terraform and Create AWS EC2 Instance | Step-by-Step Beginner Tutorial" (Nov 2025) — https://www.youtube.com/watch?v=tJP5DSfz4xk
-- Complementario (15 min): "Terraform Tutorial on AWS - Getting Started" (April 2025) — https://www.youtube.com/watch?v=Qfg6hRY4Tq0
+**🎯 Foco:** Toolchain + primer Terraform Hello World + git push público
 
-**📖 Articles del día (mix oficial + Medium, ~20 min):**
-- [ ] HashiCorp Tutorial AWS - Get Started (oficial) — https://developer.hashicorp.com/terraform/tutorials/aws-get-started
-- [ ] Medium — Atmosly "Terraform on AWS: Complete Beginner Guide 2025" — https://medium.com/atmosly/terraform-on-aws-the-most-complete-beginner-guide-for-2025-f1c2cdf1ed4d
-- [ ] Medium — Shashank Ray "Beginner to Practical: S3 + Terraform Modules" (Dec 2025) — https://medium.com/@shashankray2053/beginner-to-practical-hosting-an-s3-static-website-with-terraform-modules-26a1b3defc25
-- Top 3 takeaways:
-  1.
-  2.
-  3.
+**✅ Hecho:**
+- ✅ 10 herramientas instaladas (terraform, docker, ollama, gh, uv, node, tflint, tfsec, localstack, aws-cli)
+- ✅ Primer Terraform Hello World — S3 bucket `marko-learning-hello-8a24a3b4` creado, tags verificados, destroyed
+- ✅ Cost Allocation Tags activados después del bucket (Project, Environment, AutoStop)
+- ✅ `git init` + 6 commits firmados
+- ✅ Repo público live: https://github.com/markotalledo/de-zero-to-hero
+- ✅ 6 commits pushed a `origin/main`
+- ⏭ Reis Cap 1 lectura — diferido a esta semana antes del domingo
+- ❌ LinkedIn post — removido del plan (decisión del 2026-05-13)
 
-**💻 Práctica — checklist (~50 min):**
+**🧠 Insights del día:**
+- El ciclo `init → plan → apply → destroy` es el corazón de Terraform
+- Tags pre-existir en recursos antes de activarlos en Cost Allocation Tags (logical order)
+- `gh repo create --public --source=. --push` hace todo en un comando
+- Decisión consciente: GitHub público es accountability suficiente, sin LinkedIn
 
-Parte A — Toolchain (20 min):
-- [ ] `brew install hashicorp/tap/terraform` → verificar `terraform -version` >=1.6
-- [ ] Docker Desktop instalado (https://www.docker.com/products/docker-desktop/)
-- [ ] `brew install localstack/tap/localstack-cli`
-- [ ] `brew install ollama && ollama pull llama3.2:3b`
-- [ ] `brew install gh && gh auth login`
-- [ ] `brew install uv node tflint tfsec`
-- [ ] Crear `.tool-versions` en repo
+**Hours invested:** ~3h (Día 3 + 4 combinados)
+**Bloqueos:** ninguno
 
-Parte B — Terraform Hello World (25 min, costo: $0):
-- [ ] `cd ~/Documents/GitHub/de-zero-to-hero/01-iac-terraform/01-foundations && mkdir hello-world && cd hello-world`
-- [ ] Crear `main.tf` (provider AWS profile marko-dev + random_id + aws_s3_bucket + versioning + output)
-- [ ] `terraform init` (descarga provider)
-- [ ] `terraform plan` (preview)
-- [ ] `terraform apply` (yes para confirmar)
-- [ ] Verificar bucket: `aws --profile marko-dev s3 ls | grep hello`
-- [ ] `terraform destroy` (cleanup)
-- [ ] Confirmar bucket eliminado
+---
 
-Parte C — Cost Allocation Tags (5 min, ahora que existen recursos tag-eados):
-- [ ] Volver a Billing → Cost Allocation Tags → activar `Project`, `Environment`, `AutoStop`
+### Pendiente esta semana antes del domingo
 
-Parte D — Commit (5 min):
-- [ ] `git add 01-iac-terraform/01-foundations/hello-world .tool-versions`
-- [ ] `git commit -m "feat(iac): primer Terraform hello-world — S3 bucket creado y destruido"`
-
-**🧠 Insight del día:**
-(1 oración honesta al cerrar — algo sobre el ciclo init→plan→apply→destroy)
-
-**Hours invested:**
-**Bloqueos:**
+- [ ] Reis "Fundamentals of DE" Cap 1 (págs 1-30) o Joe Reis Substack: https://joereis.substack.com/
+- [ ] Pin del repo en tu GitHub profile (Customize pins → de-zero-to-hero)
+- [ ] Día 5 (viernes 2026-05-15): Anthropic Prompt Engineering Tutorial chapters 1-3
 
 ---
 
@@ -157,6 +139,8 @@ Parte D — Commit (5 min):
 **Hours invested:** X.X
 ```
 
+> Nota: LinkedIn post no es parte del template diario. Decisión 2026-05-13 — GitHub público es accountability suficiente.
+
 ---
 
 ## Weekly summary template (cada domingo)
@@ -172,5 +156,5 @@ Parte D — Commit (5 min):
   3. 
 - Stuck on: 
 - Next week priority: 
-- LinkedIn post: [link]
+- Commits del sábado: [link]
 ```

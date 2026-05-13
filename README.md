@@ -29,14 +29,13 @@
 | Libros leídos | 0 | 5 |
 | Certs obtenidas | 0 | 5 |
 | Proyectos | 0 | 25 |
-| LinkedIn posts | 0 | 52 |
 | Hours invested | 0 | 547+ |
 
 ## 📅 Daily pattern
 
 🎥 Video (~30min) + 📖 Article (~20min) + 💻 Práctica (~40min)
 
-**Sábados:** 📦 Commit obligatorio · **Domingos:** 🧠 System Design + 📝 LinkedIn post
+**Sábados:** 📦 Commit obligatorio · **Domingos:** 🧠 System Design problem
 
 ---
 

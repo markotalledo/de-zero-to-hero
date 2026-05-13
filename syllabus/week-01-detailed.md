@@ -359,9 +359,12 @@ git push  # si ya hiciste git init + remote (sino esto es mañana)
 
 ---
 
-## 🗓 Día 4 — Jueves 2026-05-14 — Git init + push + LinkedIn announcement
+## 🗓 Día 4 — Jueves 2026-05-14 — Git push público + Cap 1 Reis
 
-> ✅ Marko adelantó `git init` + 3 commits en Día 3. Lo que queda hoy: `gh repo create --public --push`, LinkedIn post inicial, Cap 1 de Reis.
+> ✅ **Cerrado el 2026-05-13** (adelantado): `git init` + 6 commits + `gh repo create --public --push`. Repo live: https://github.com/markotalledo/de-zero-to-hero
+> ⏭ Falta solo: Cap 1 de Reis (libro o Joe Reis Substack) + pin del repo en profile.
+>
+> ❌ **LinkedIn post removido del plan** — decisión 2026-05-13. GitHub público es accountability suficiente.
 
 ### 🎥 Walkthrough (~30 min) — FREE — blogs 2025+
 
@@ -385,66 +388,27 @@ git push  # si ya hiciste git init + remote (sino esto es mañana)
 **3) Bonus Medium — "How GitHub CLI changed my workflow" (cualquier artículo reciente 2025)** (~5 min)
 - Búsqueda en Medium: "github cli workflow 2025"
 
-### 💻 Práctica (~40 min) — Repo público + LinkedIn
+### 💻 Práctica (~25 min) — Cierre Día 4
 
-**1. git init y push (15 min):**
+**1. ✅ git init + push (ya hecho 2026-05-13):**
 ```bash
-cd ~/Documents/GitHub/de-zero-to-hero
-
-git init
-git branch -M main
-git add .
-git commit -m "feat: bootstrap de-zero-to-hero — Mid → Senior DE 12-month journey"
-
-# Crear repo público en GitHub
-gh repo create de-zero-to-hero --public --source=. --description "12-month journey from Mid to Senior Data Engineer. Public progress, daily commits, real projects." --push
-
-# Verificar
-gh repo view --web
+# Esto ya está hecho:
+git init && git branch -M main
+git add . && git commit -m "feat: bootstrap..."
+gh repo create de-zero-to-hero --public --source=. --push
 ```
 
-**2. LinkedIn post inicial (15 min):**
-
-Draft (editá a tu gusto):
-
-```
-Public commitment.
-
-A partir del lunes 2026-05-11, voy a documentar 1 año de journey
-de Mid Data Engineer a Senior DE.
-
-1.5 horas por día. 365 días. Sin bootcamps pagos.
-
-Stack target: Terraform, Airflow desde cero, Spark/Lakehouse,
-Kafka, RAG, MCP, fine-tuning, system design.
-
-Repo público (todo el progreso a la vista):
-github.com/markotalledo/de-zero-to-hero
-
-5 certs target en el camino:
-- HashiCorp Terraform Associate (mes 4)
-- AWS Data Engineer Associate (mes 4)
-- dbt Analytics Engineer (mes 8)
-- Databricks DE Associate (mes 8)
-- AWS ML EA o Databricks GenAI Engineer (mes 12)
-
-La consistencia te lleva. La intensidad te quema.
-
-Si te gustaría seguir el journey, dejame un comentario y te
-etiqueto en los posts semanales.
-
-#DataEngineering #LearningJourney #PublicCommitment
-```
-
-Publicá ahora. Compartí con 3 contactos.
-
-**3. Pin del repo en tu GitHub profile:**
+**2. Pin del repo en tu GitHub profile** (1 min):
 - Tu profile → Customize your pins → seleccionar `de-zero-to-hero`
 
+**3. Leer Cap 1 Reis** (20 min):
+- Si tenés libro: "Fundamentals of Data Engineering" — Cap 1 (págs 1-30)
+- Si no: Joe Reis Substack pinned post — https://joereis.substack.com/
+
 **LOG.md:**
-- Repo público: ✅ link
-- LinkedIn post: ✅ link
-- GitHub pin: ✅
+- Repo público: ✅ https://github.com/markotalledo/de-zero-to-hero
+- GitHub pin: ⏳
+- Reis Cap 1 leído: ⏳
 
 ---
 
@@ -620,43 +584,19 @@ gh repo view --web
 - 🔗 https://github.com/donnemartin/system-design-primer
 - Solo: "Index of system design topics" + "Performance vs scalability"
 
-### 💻 Práctica (~40 min) — Weekly review + LinkedIn post
+### 💻 Práctica (~25 min) — Weekly review
 
 **1. Weekly review en Claude Code (15 min):**
 ```
 /weekly-review
 ```
-Yo audito tu commit del sábado, te ayudo a pulir el README, y draft del LinkedIn post.
+Yo audito tu commit del sábado y te ayudo a pulir README/notas.
 
-**2. Tu primer LinkedIn post de progreso (15 min):**
+**2. Update Notion (5 min):**
+- Notion page → 52-Week Tracker → Semana 1: status `✅` + link al commit
 
-Template:
-```
-Semana 1 cerrada del journey 1 año Mid → Senior DE.
-
-Hecho:
-✅ AWS account personal con guardrails ($5/$15/$25 budgets)
-✅ Toolchain local: TF, Docker, AWS CLI, Ollama, gh, uv
-✅ Repo público live: github.com/markotalledo/de-zero-to-hero
-✅ Anthropic Prompt Engineering tutorial — chapters 1-3
-✅ Primer diagrama de architecture target
-
-Aprendizaje top de la semana:
-[1 oración honesta]
-
-Próxima semana: Terraform fundamentals — VPC, IAM, S3 modules.
-
-Y vos? Algo que estás aprendiendo este semestre?
-
-#DataEngineering #Week1 #ContinuousLearning
-```
-
-**3. Update tracker en Notion (10 min):**
-- Notion page → 52-Week Tracker → Semana 1: status `✅` + link al LinkedIn post
-
-**4. Preview semana 2 (5 min):**
+**3. Preview Semana 2 (5 min):**
 - Abrí `syllabus/Q1-foundations.md` → Semana 2 (Terraform fundamentals)
-- Ya sabés qué te toca el lunes
 
 **LOG.md weekly summary:**
 ```markdown
@@ -666,11 +606,11 @@ Y vos? Algo que estás aprendiendo este semestre?
 - Hours invested: ~X
 - Wins:
   1. AWS account + guardrails 100% configurados
-  2. Repo público en GitHub con 1 LinkedIn post de impacto
-  3. Anthropic API funcionando, primer prompt fine-tuneado
+  2. Repo público en GitHub
+  3. Anthropic API funcionando + primer Terraform Hello World
 - Stuck on: [si hubo algo]
 - Next week priority: Terraform module básico (proyecto 1.1)
-- LinkedIn post de cierre: [link]
+- Commits del sábado: [link]
 ```
 
 ---
@@ -680,10 +620,9 @@ Y vos? Algo que estás aprendiendo este semestre?
 Al final del domingo deberías tener:
 - ✅ Cuenta AWS personal con MFA + IAM user + budgets
 - ✅ 10 herramientas instaladas localmente
-- ✅ Repo `de-zero-to-hero` público con 2+ commits
-- ✅ 2 LinkedIn posts (lanzamiento + cierre semana 1)
+- ✅ Repo `de-zero-to-hero` público con 6+ commits
 - ✅ Anthropic Prompt Engineering chapters 1-3 completados
-- ✅ Cap 1 de Reis "Fundamentals of DE" leído
+- ✅ Cap 1 de Reis "Fundamentals of DE" leído (o Joe Reis Substack)
 - ✅ Diagrama excalidraw del journey
 - ✅ ~10.5 hours invested
 
