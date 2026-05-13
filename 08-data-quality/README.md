@@ -1,28 +1,38 @@
-# Phase 6: Data Quality + Observability (paralelo, sem 25-30+)
+# Phase 6: Data Quality + Observability
 
-## Projects
+> Senior DE no solo construye pipelines — los monitorea y garantiza calidad. Paralelo a otras fases.
 
-- [ ] Great Expectations en pipeline propio
-- [ ] Elementary Data en tu dbt
-- [ ] OpenLineage end-to-end (Airflow + dbt + Spark traceado)
+## 🗓 Cubierta como práctica paralela en Semanas 25+
 
-## Tools
+No tiene semanas dedicadas exclusivas — se integra a los proyectos de otras fases. Cuando armes Airflow DAGs o dbt models, vas a agregar checks de calidad con estas herramientas.
 
-- **Great Expectations** (Python data quality estándar)
-- **dbt-expectations + dbt-utils + elementary-data**
-- **Soda Core** (open-source)
-- **OpenLineage + Marquez** (lineage)
-- **OpenMetadata / DataHub** (catalog)
+## 🛠 Projects
 
-## Resources
+- [ ] Great Expectations en pipeline propio (Phase 2-3)
+- [ ] Elementary Data en tu dbt local (Phase 2)
+- [ ] OpenLineage end-to-end (Airflow + dbt + Spark traceado, Phase 3)
 
-- "Data Quality Fundamentals" — Moses & Gavish (O'Reilly, founders Monte Carlo)
+## 🧰 Tools que vas a aprender
+
+- **Great Expectations** — el estándar Python de data quality (https://greatexpectations.io/)
+- **dbt-expectations + dbt-utils + elementary-data** — dbt-native quality
+- **Soda Core** — alternativa open-source
+- **OpenLineage + Marquez** — lineage tracing
+- **OpenMetadata / DataHub** — data catalogs
+
+## 📚 Material recomendado
+
+**Libros:**
+- "Data Quality Fundamentals" — Moses & Gavish (O'Reilly) — founders de Monte Carlo
 - "Data Observability for Data Engineers" — Petrella (O'Reilly)
 
-## Edge cases que dominar
+## 🎯 Edge cases que vas a dominar
 
-- Schema drift, volume drift, freshness drift, distribution drift
-- Slowly Changing Dimensions (SCD 1/2/3/4/6/7)
-- Idempotency en ETLs
-- Late-arriving data y backfills
-- Reconciliation cross-system
+- **Schema drift** — columnas que cambian upstream
+- **Volume drift** — pipeline corre OK pero output es 10x menor
+- **Freshness drift** — dato llegó pero 3h tarde
+- **Distribution drift** — promedios cambian fundamentalmente
+- **Slowly Changing Dimensions** (SCD 1/2/3/4/6/7)
+- **Idempotency** en ETLs (re-runs dan mismo resultado)
+- **Late-arriving data** + backfills
+- **Reconciliation cross-system**
