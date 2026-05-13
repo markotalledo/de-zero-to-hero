@@ -2,12 +2,13 @@
 
 > Cierra el gap más grande: hoy operás AWS via consola. Senior DE arma todo desde Terraform con CI/CD.
 
-## 🗓 Cubierta en Semanas 2-9
+## 🗓 Cubierta en Semanas 1-15 (todo el Q1)
 
 Las **fuentes específicas** (videos, articles, Medium, comandos paso a paso) viven en los archivos detallados que se generan cada lunes con `/weekly-plan`:
 
-- ✅ [Semana 1 detallada](../syllabus/week-01-detailed.md) — Hello World básico (semana actual)
-- 📋 Semana 2 — Terraform fundamentals (genera con `/weekly-plan` el lunes 2026-05-18)
+**Construir base IaC:**
+- ✅ [Semana 1 detallada](../syllabus/week-01-detailed.md) — Setup + Hello World básico (semana actual)
+- 📋 Semana 2 — Terraform fundamentals
 - 📋 Semana 3 — Terraform state + módulos compuestos
 - 📋 Semana 4 — AWS deep dive: S3 + lifecycle + storage
 - 📋 Semana 5 — Lambda + EventBridge
@@ -15,6 +16,16 @@ Las **fuentes específicas** (videos, articles, Medium, comandos paso a paso) vi
 - 📋 Semana 7 — Glue + Catalog + Athena
 - 📋 Semana 8 — Multi-environment + Terragrunt
 - 📋 Semana 9 — Data lake architecture from scratch
+
+**Profundizar (architecture, governance, dbt, Snowflake):**
+- 📋 Semana 10 — Data Mesh + governance basics (Lake Formation, OpenMetadata)
+- 📋 Semana 11 — dbt avanzado consolidación (snapshots SCD2, dbt-utils, dbt-expectations, Elementary)
+- 📋 Semana 12 — Snowflake basics (trial $400 créditos + dbt-snowflake + Streams/Tasks)
+- 📋 Semana 13 — AWS DEA-C01 prep intensivo (Maarek/TutorialsDojo practice exams)
+
+**Recta final certs (~$220 inversión, semana 15):**
+- 📋 Semana 14 — AWS DEA-C01 + Terraform Associate prep paralelo
+- 📋 Semana 15 — 🎯 **Dar ambos exámenes** (DEA-C01 + Terraform Associate)
 
 ## 🛠 Projects (4)
 
