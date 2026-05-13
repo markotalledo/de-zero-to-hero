@@ -42,7 +42,7 @@
 - Insight clave: el manejo de costos en AWS es más tecnicismo (FinOps practices, tagging, monitoring) que magia. Los 5 design goals son prácticos.
 
 **📋 Info de la cuenta:**
-- Account ID: `648664873742`
+- Account ID: `&lt;account-id&gt;`
 - IAM user: `marko-aws-personal` (alias profile CLI: `marko-dev`)
 - Region default: us-east-1
 
