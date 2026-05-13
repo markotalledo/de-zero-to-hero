@@ -1,0 +1,28 @@
+name: streak-check
+
+on:
+  schedule:
+    # Domingos 11pm Lima (4am UTC lunes)
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+jobs:
+  check-weekly-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check commits in past 7 days
+        run: |
+          COMMITS=$(git log --since="7 days ago" --oneline | wc -l)
+          echo "Commits last 7 days: $COMMITS"
+          if [ "$COMMITS" -eq "0" ]; then
+            echo "::warning::No commits in the past week. Streak broken — get back tomorrow."
+            exit 1
+          fi
+          echo "✅ Streak alive: $COMMITS commits this week"
+
+      - name: Update README badge (optional future enhancement)
+        run: echo "TODO: badge update"

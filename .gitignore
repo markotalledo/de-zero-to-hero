@@ -1,0 +1,74 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terragrunt-cache/
+crash.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS
+Thumbs.db
+*.log
+
+# AWS / cloud credentials (never commit)
+.aws/
+credentials
+*.pem
+*.key
+
+# Docker
+.docker/
+
+# dbt
+dbt_packages/
+target/
+logs/
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Local data
+data/
+*.csv
+*.parquet
+*.db
+*.sqlite
+!sample_data/
+!sample.*
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Claude
+.claude/local/
