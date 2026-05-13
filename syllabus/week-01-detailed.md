@@ -361,29 +361,29 @@ git push  # si ya hiciste git init + remote (sino esto es mañana)
 
 ## 🗓 Día 4 — Jueves 2026-05-14 — Git init + push + LinkedIn announcement
 
-### 🎥 Video / Walkthrough (~30 min) — FREE
+> ✅ Marko adelantó `git init` + 3 commits en Día 3. Lo que queda hoy: `gh repo create --public --push`, LinkedIn post inicial, Cap 1 de Reis.
 
-⚠️ Los videos buenos de `gh` CLI son del 2020-21 (la herramienta es estable, no hubo cambios grandes). Por eso priorizamos blogs 2025+ y docs oficiales (que SÍ se mantienen actualizados).
+### 🎥 Walkthrough (~30 min) — FREE — blogs 2025+
+
+⚠️ YouTube de `gh` CLI son 2020-21 (estable). Por eso priorizamos blogs 2025+ y docs oficiales.
 
 **Primary — blog 2025 walkthrough (15 min):** Adam Johnson "Top commands in gh, the official GitHub CLI" (Nov 24, 2025)
 - 🔗 https://adamj.eu/tech/2025/11/24/github-top-gh-cli-commands/
-- Comandos más usados con ejemplos reales
 
 **Complementario — blog 2025 (15 min):** "Getting Started with GitHub CLI (gh): GitHub From Your Terminal" (Dec 11, 2025)
 - 🔗 https://blogs.reliablepenguin.com/2025/12/11/getting-started-with-github-cli-gh-github-from-your-terminal
 
-### 📖 Article (~20 min) — FREE oficial
+### 📖 Article (~20 min) — mix oficial + Medium + libro
 
-**1) GitHub CLI Quickstart (oficial, siempre actualizado)** (~10 min)
+**1) GitHub CLI Quickstart (oficial)** (~5 min)
 - 🔗 https://docs.github.com/en/github-cli/github-cli/quickstart
-- Comandos top-level: `gh repo`, `gh pr`, `gh issue`, `gh auth`
 
-**2) GitHub CLI Examples (oficial)** (~10 min)
-- 🔗 https://cli.github.com/manual/examples
+**2) Medium — Joe Reis Substack: "What is a Data Engineer?" (atemporal)** (~10 min)
+- 🔗 https://joereis.substack.com/
+- Si tenés el libro: **Cap 1 "Data Engineering Described"** (págs 1-30) en su lugar
 
-**Bonus si tenés "Fundamentals of Data Engineering" — Reis & Housley:**
-- **Cap 1: Data Engineering Described** (págs 1-30)
-- Si NO tenés el libro: leer post de Joe Reis "What is a Data Engineer?" en https://joereis.substack.com/
+**3) Bonus Medium — "How GitHub CLI changed my workflow" (cualquier artículo reciente 2025)** (~5 min)
+- Búsqueda en Medium: "github cli workflow 2025"
 
 ### 💻 Práctica (~40 min) — Repo público + LinkedIn
 
@@ -459,15 +459,23 @@ Publicá ahora. Compartí con 3 contactos.
 **Complementario (15-20 min):** "Claude AI Tutorial: The ULTIMATE Guide to Prompt Engineering & Artifacts (2025)"
 - 🔗 https://www.youtube.com/watch?v=dG2iFVKdyhs
 
-### 📖 Article (~20 min) — FREE oficial
+### 📖 Articles (~20 min) — mix oficial + Medium
 
-**1) "Building effective agents" — Anthropic Engineering** (~20 min)
+**1) "Building effective agents" — Anthropic Engineering oficial** (~10 min)
 - 🔗 https://www.anthropic.com/research/building-effective-agents
-- THE post de patterns de agents. Leer entero.
+- THE post de agent patterns. Leer entero.
 
-**2) Prompt Engineering Overview (Claude API Docs oficial)** (~10 min)
+**2) "Effective context engineering for AI agents" — Anthropic Engineering (2025)** (~10 min)
+- 🔗 https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+- Cómo curar el "attention budget" del modelo
+
+**3) Medium — "Prompt Engineering with Anthropic Claude" — Promptlayer Blog** (~8 min)
+- 🔗 https://blog.promptlayer.com/prompt-engineering-with-anthropic-claude-5399da57461d/
+- Patterns prácticos con ejemplos de prod
+
+**4) Prompt Engineering Overview — Claude API Docs oficial** (~5 min)
 - 🔗 https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
-- Las best practices oficiales actualizadas para Claude 4.x
+- Best practices oficiales para Claude 4.x
 
 ### 💻 Práctica (~40 min) — Anthropic Prompt Engineering Tutorial chapters 1-3
 
@@ -521,16 +529,24 @@ Completá los exercises de cada chapter. **Tomá notas** de los takeaways en `~/
 **Bonus (8 min):** "Design System Diagrams Like Google Engineers (FREE Tool) | Excalidraw" (Feb 4, 2026)
 - 🔗 https://www.youtube.com/watch?v=qUnc-vNIM8Q
 
-### 📖 Article (~20 min) — FREE
+### 📖 Articles (~20 min) — mix oficial + Medium
 
 **1) Excalidraw — Software Architecture Diagrams (oficial)** (~10 min)
 - 🔗 https://plus.excalidraw.com/use-cases/software-architecture-diagram
 - Ejemplos de cómo hacer architecture diagrams limpios
 
-**2) Mermaid intro (sintaxis de diagrams as code)** (~10 min)
+**2) Medium — "Mermaid.js vs Excalidraw: Why Text-Based Diagrams Win Long-Term Documentation in 2026" — Activated Thinker** (~8 min)
+- 🔗 https://medium.com/activated-thinker/how-one-comment-changed-the-way-i-create-flowcharts-eba4e69eafa9
+- Perspectiva práctica: cuándo Mermaid > Excalidraw (y viceversa)
+
+**3) Medium — "Creating Technical Diagrams: Mermaid, PlantUML, Excalidraw" (April 2026)** (~5 min)
+- 🔗 https://dasroot.net/posts/2026/04/creating-technical-diagrams-mermaid-plantuml-excalidraw/
+- Comparativa de las 3 herramientas con ejemplos
+
+**4) Mermaid intro (oficial)** (~5 min)
 - 🔗 https://mermaid.js.org/intro/
 - Skim los tipos: flowchart, sequence, classDiagram, gitGraph, C4
-- Live editor para probar: https://mermaid.live/
+- Live editor: https://mermaid.live/
 
 ### 💻 Práctica (~40 min) — Diagrama de skills + commit
 
@@ -584,18 +600,25 @@ gh repo view --web
 **Backup (siempre actualizado):** ByteByteGo "Scalability Patterns for Modern Distributed Systems"
 - 🔗 https://blog.bytebytego.com/p/scalability-patterns-for-modern-distributed
 
-### 📖 Article (~20 min) — FREE — ByteByteGo (atemporal, conceptos universales)
+### 📖 Articles (~20 min) — mix ByteByteGo + Medium + GitHub
 
-**1) ByteByteGo: "Latency vs. Throughput" (EP186)** (~10 min)
+**1) ByteByteGo: "Latency vs. Throughput" (EP186)** (~8 min)
 - 🔗 https://blog.bytebytego.com/p/ep186-latency-vs-throughput
 
-**2) ByteByteGo: "Latency numbers you should know" (EP22)** (~5 min)
-- 🔗 https://blog.bytebytego.com/p/ep22-latency-numbers-you-should-know
-- También: https://bytebytego.com/guides/which-latency-numbers-should-you-know/
+**2) Medium — "How to think about Latency vs Throughput in System Design" — Sagar (May 2026)** (~8 min)
+- 🔗 https://medium.com/@sagar.necindia/latency-vs-throughput-system-design-05f7c394eb98
+- Reciente, con ejemplos modernos
 
-**3) System Design Primer (GitHub, actualizado activamente)** (~5 min skim)
+**3) Medium — "Understanding System Design: Throughput, Latency, CAP Theorem, Availability, Atomicity" — Harsha Agarwal** (~7 min)
+- 🔗 https://medium.com/@harshaag99/understanding-system-design-throughput-latency-cap-theorem-availability-and-atomicity-560951f34967
+- Mete CAP theorem (preview para Q3 streaming)
+
+**4) ByteByteGo: "Latency numbers you should know" (EP22)** (~3 min skim)
+- 🔗 https://blog.bytebytego.com/p/ep22-latency-numbers-you-should-know
+
+**5) System Design Primer (GitHub)** (~3 min skim)
 - 🔗 https://github.com/donnemartin/system-design-primer
-- Leer solo: "Index of system design topics" + "Performance vs scalability"
+- Solo: "Index of system design topics" + "Performance vs scalability"
 
 ### 💻 Práctica (~40 min) — Weekly review + LinkedIn post
 
